@@ -12,13 +12,19 @@
 
 
 
-
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
 
 
 .navbar{
     background: #333;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .logo{
@@ -80,6 +86,7 @@
     font-size: 1rem;
 }
 
+
 #search{
     padding: 0.7rem 0.3rem;
     width: 600px;
@@ -88,3 +95,60 @@
 #search:focus{
     outline: none;
 }
+
+/* SECTION TITLE */
+.section-title{
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* FEEDBACK ITEMS */
+.list-section{
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+}
+
+.movie-list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin-bottom: 2rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(233, 50, 89);
+    width: 100%;
+    color: #fff;
+    padding: 2rem;
+    /* margin-top: 2rem; */
+}
+.genre{
+    position: absolute;
+    left: 2%;
+    bottom: 70%;
+    background: #f4f4f4;
+    color: #333;
+    padding: 0.2rem;
+    border-radius: 6px;
+    font-size: 0.6rem;
+}
+.close{
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+}
+

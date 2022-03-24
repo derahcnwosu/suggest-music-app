@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 function Navbar() {
   return (
     <div className="navbar">
-        <h4 className="logo">Suggest Music</h4>       
+        <h4 className="logo">Sabi Music</h4>       
             <ul className="links">
                 <li>
                     <NavLink to= '/' className= 'nav-link home' currentclassname= 'active'>Home</NavLink>
